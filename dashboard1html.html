@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Game</title>
+  <style>
+    body {
+      background-color: #fff;
+    }
+
+    .car {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="car"></div>
+  <script>
+    var car = document.querySelector(".car");
+    var x = 0;
+    var y = 0;
+
+    function moveCar() {
+      car.style.top = y;
+      car.style.left = x;
+
+      x += 10;
+      if (x > window.innerWidth) {
+        x = 0;
+      }
+
+      y += 10;
+      if (y > window.innerHeight) {
+        y = 0;
+      }
+    }
+
+    setInterval(moveCar, 100);
+  </script>
+</body>
+</html>

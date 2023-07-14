@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Login Page</title>
+<head>
+<style>
+body {
+  background: pink;
+  text-align: center;
+  font-size: 20px;
+  padding: 150px;
+ 
+}
+</style>
+</head>
+<body>
+<div class="centre">
+<fieldset>
+
+<h2>Login Page</h2>
+<form>
+<label for="name">Username<label><br>
+<input type="text" id="Name" name="name"><br>
+<label for="email">Password<br>
+<input type="password" id="Password" name="Password"><br>
+<br>
+<input type="submit" value="LOGIN">
+<p><b><a href="file:///C:/Users/Admin/Desktop/omkar.html">Continue To Next Page</a></b></p>
+
+</form>
+
+</body>
+
+</html>
